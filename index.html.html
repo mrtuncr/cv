@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Multi-Column Modern CV</title>
+<style>
+    body { font-family: 'Inter', Arial, sans-serif; margin: 0; padding: 40px; background: #f3f6ff; }
+    .cv-container { max-width: 1000px; margin: auto; background: #ffffff; border-radius: 18px; overflow: hidden; box-shadow: 0 12px 45px rgba(0,0,0,0.12); display: grid; grid-template-columns: 260px 1fr; }
+    .left-col { background: linear-gradient(180deg, #4a9cff, #0066ff); color: #fff; padding: 35px 25px; }
+    .profile-name { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+    .profile-role { font-size: 16px; opacity: 0.9; margin-bottom: 25px; }
+    .left-section-title { font-size: 15px; font-weight: 700; margin-top: 25px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid rgba(255,255,255,0.4); padding-bottom: 4px; }
+    .skill-tag { background: rgba(255,255,255,0.18); padding: 6px 10px; border-radius: 6px; display: inline-block; margin: 4px 4px; font-size: 13px; }
+    .right-col { padding: 40px 50px; }
+    .right-section-title { font-size: 20px; font-weight: 700; margin-bottom: 18px; color: #4a9cff; border-left: 6px solid #0066ff; padding-left: 12px; }
+    .experience-block { margin-bottom: 25px; }
+    .experience-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 17px; }
+    .experience-details li { margin-bottom: 6px; }
+    .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .project-card { background: #f8f5ff; border: 1px solid #e7dfff; border-radius: 10px; padding: 12px; }
+</style>
+</head>
+<body>
+
+<div class="cv-container">
+
+    <!-- SOL SÜTUN -->
+    <div class="left-col">
+        <div class="profile-name">Emre Tuncer</div>
+        
+
+        <div class="left-section-title">İletişim</div>
+        <p>utuncer08@gmail.com<br><br>İzmir, Türkiye</p>
+
+        <div class="left-section-title">Yetenekler</div>
+        <div>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">AI Tools</span>
+            <span class="skill-tag">AI Agents</span>
+            <span class="skill-tag">Blockchain</span>
+        </div>
+
+        <div class="left-section-title">Eğitim</div>
+        <p><strong>İstanbul Fatih Üniversitesi</strong><br>Moleküler Biyoloji ve Genetik (Burslu)<br>2008 - 2012</p>
+        <p><strong>İstanbul Üniversitesi</strong><br>Moleküler Tıp Yüksek Lisans<br>2012 - 2014</p>
+        <p><strong>Clarusway</strong><br>Full Stack Developer Bootcamp<br>2023</p>
+        <p><strong>Kocatepe Üniversitesi</strong><br>Matematik (Tamamlanmadı)<br>2003 - 2007</p>
+    </div>
+
+    <!-- SAĞ SÜTUN -->
+    <div class="right-col">
+
+        <div class="right-section-title">Özet</div>
+<p style="text-align: justify;">Bilimsel araştırma geçmişimi yazılım, Web3 ve yapay zeka teknolojileriyle birleştiren çok yönlü bir teknoloji profesyoneliyim. Moleküler biyoloji ve genetik alanındaki akademik altyapım; analitik düşünme, veri odaklı çalışma, problem çözme ve disiplinli araştırma becerileri kazandırdı. 2021’den itibaren teknoloji, ağ güvenliği, yazılım ve kriptografi konularında içerikler üreterek teknik anlatım yetkinliğimi geliştirdim. Full Stack Developer kursunu başarıyla tamamlayarak frontend yazılım dillerinde tecrübe sahibi oldum. 2024'ten bu yana Web3, blockchain, AI araçları ve otomasyon sistemleri üzerine uygulamalar geliştirmeye çalışıyorum, öğreniyorum. Hızlı adapte olabilen, öğrenmeye açık ve sorumluluk almaktan çekinmeyen biri olarak teknik ekiplerde değer yaratabileceğime inanıyorum.</p>
+
+        <div class="right-section-title">Deneyim</div>
+
+        <div class="experience-block">
+            <div class="experience-header">
+                <span>Dokuz Eylül Üniversitesi — Araştırma Görevlisi</span>
+                <span style="color:#777;">2014 - 2018</span>
+            </div>
+            <ul class="experience-details">
+                <li>Moleküler Tıp alanında akademik araştırmalar yürüttü.</li>
+                <li>Laboratuvar deneyleri, veri analizi ve proje yürütme süreçlerinde aktif rol aldı.</li>
+                <li>Bilimsel disiplin, analitik düşünme ve problem çözme yetkinlikleri geliştirdi.</li>
+            </ul>
+        </div>
+
+        <div class="experience-block">
+            <div class="experience-header">
+                <span>Freelance — Teknik İçerik Yazarı</span>
+                <span style="color:#777;">2021 - 2022</span>
+            </div>
+            <ul class="experience-details">
+                <li>Ağ teknolojileri, yazılım, güvenlik ve kriptografi üzerine teknik makaleler yazdı.</li>
+                <li>Karmaşık teknolojik kavramları anlaşılır içeriklere dönüştürdü.</li>
+                <li>Hem akademik hem popüler bilim formatlarında üretim sağladı.</li>
+            </ul>
+        </div>
+
+        <div class="experience-block">
+            <div class="experience-header">
+                <span>Clarusway — Full Stack Developer Bootcamp</span>
+                <span style="color:#777;">2023</span>
+            </div>
+            <ul class="experience-details">
+                <li>React, JavaScript, HTML, CSS üzerine yoğun eğitim aldı ve projeler geliştirdi.</li>
+                <li>Modern yazılım geliştirme metodolojilerine hakimiyet kazandı.</li>
+            </ul>
+        </div>
+
+        
+
+            <div class="right-section-title">Diğer</div>
+<ul>
+<li>Blokzincir temelli mini Web3 uygulamaları geliştirmeye çalışıyorum.</li>
+<li>Web3 ekosisteminde yer alan projelere uzun X postları, kısa animasyonlar ve içerikler hazırlıyorum.</li>
+<li>Projelere ait teknik konuları proje komünite üyelerine daha basitleştirerek anlatacak içerikler üretiyorum.</li>
+
+</ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
