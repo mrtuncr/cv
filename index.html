@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Emre Tuncer CV</title>
+<title>Emre TUNCER CV</title>
 <style>
     body { font-family: 'Inter', Arial, sans-serif; margin: 0; padding: 40px; background: #f3f6ff; }
     .cv-container { max-width: 1000px; margin: auto; background: #ffffff; border-radius: 18px; overflow: hidden; box-shadow: 0 12px 45px rgba(0,0,0,0.12); display: grid; grid-template-columns: 260px 1fr; }
@@ -19,6 +19,15 @@
     .experience-details li { margin-bottom: 6px; }
     .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
     .project-card { background: #f8f5ff; border: 1px solid #e7dfff; border-radius: 10px; padding: 12px; }
+@media (max-width: 768px) {
+    body { padding: 15px; }
+    .cv-container { grid-template-columns: 1fr; }
+    .left-col { padding: 25px 20px; }
+    .right-col { padding: 25px 20px; }
+    .experience-header { flex-direction: column; gap: 4px; }
+    .project-grid { grid-template-columns: 1fr; }
+    .skill-tag { font-size: 12px; padding: 5px 8px; }
+}
 </style>
 </head>
 <body>
